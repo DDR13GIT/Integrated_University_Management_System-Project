@@ -30,6 +30,7 @@ IUMS is a java written, javafx powered database management system for educationa
   
 ## Installation
 To check the software just [Download](https://drive.google.com/file/d/1OvVzaPFZ5tchEcT5g1PpGW6py31KbRLO/view?usp=sharing) the file from this link. **(Make sure you have installed java 15.0.1 on your Machine)**
+Checkout some [Screenshots](https://drive.google.com/drive/folders/1FEFL1Rb374RhxsuY5Y-Kftc4fq-IoOfr?usp=sharing) .
 
 ## Developers
     Debopriya Deb Roy [Team Leader]
@@ -41,7 +42,6 @@ License
 MIT
 
 **Free Software, Hell Yeah!**
-
 
 
 
