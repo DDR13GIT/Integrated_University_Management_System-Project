@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.addFacultyController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="fxaddfaculty" layoutX="34.0" layoutY="52.0" text="Add Faculty" textFill="#444444" underline="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="110.0" prefHeight="45.0" prefWidth="150.0" text="Full Name*" textFill="#464545">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="162.0" prefHeight="45.0" prefWidth="150.0" text="Password*" textFill="#464545">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="215.0" prefHeight="45.0" prefWidth="150.0" text="Contact no*" textFill="#464545">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="271.0" prefHeight="45.0" prefWidth="150.0" text="Email Address*" textFill="#464545">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="326.0" prefHeight="45.0" prefWidth="150.0" text="Department*" textFill="#464545">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="fxSaveButton" buttonType="RAISED" layoutX="83.0" layoutY="427.0" onAction="#saveincall" prefHeight="36.0" prefWidth="98.0" ripplerFill="#00bab3" style="-fx-background-radius: 4; -fx-background-color: #FDD26E;" text="Save" textFill="#444444">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="fxclearbutton" buttonType="RAISED" layoutX="270.0" layoutY="427.0" onAction="#clearcall" prefHeight="36.0" prefWidth="98.0" ripplerFill="#00bab3" style="-fx-background-radius: 4; -fx-background-color: #ff7788;" text="Clear" textFill="#444444">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="fxname" layoutX="164.0" layoutY="120.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="fxpass" layoutX="164.0" layoutY="172.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="fxcontact" layoutX="164.0" layoutY="225.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="fxmail" layoutX="164.0" layoutY="281.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="fxdept" layoutX="164.0" layoutY="336.0" prefHeight="25.0" prefWidth="256.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

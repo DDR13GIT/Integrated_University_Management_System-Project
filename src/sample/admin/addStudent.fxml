@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="438.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.addStudentController">
+   <children>
+      <Label layoutX="23.0" layoutY="21.0" prefHeight="37.0" prefWidth="219.0" text="Student Details">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="80.0" text="Student ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="114.0" text="Full Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="147.0" text="Semester:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="183.0" text="Year/Semester:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertID" layoutX="196.0" layoutY="81.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="insertName" layoutX="196.0" layoutY="115.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="insertSemester" layoutX="196.0" layoutY="148.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="insertYearSem" layoutX="196.0" layoutY="184.0" prefHeight="25.0" prefWidth="219.0" />
+      <JFXButton layoutX="116.0" layoutY="243.0" onAction="#save" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Save">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="246.0" layoutY="243.0" onAction="#clear" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Clear">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+   </children>
+</Pane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="800.0" prefWidth="1239.0" style="-fx-background-color: #bbdefb;">
+         <children>
+            <ImageView fitHeight="476.0" fitWidth="800.0" layoutX="220.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarship_int.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="792.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="LogoutBtn" accessibleRole="BUTTON" fitHeight="30.0" fitWidth="40.0" layoutX="1164.0" layoutY="15.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@images/Logout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="385.0" fitWidth="689.0" layoutX="43.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarship_require_int.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="300.0" fitWidth="322.0" layoutX="842.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarship_int2%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="70.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarship_int3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

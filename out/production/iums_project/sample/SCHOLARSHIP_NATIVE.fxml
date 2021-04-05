@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="2.0" layoutY="-2.0" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="368.0" fitWidth="1339.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarships.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="428.0" fitWidth="1164.0" layoutX="118.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/scholarshiptimeline.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="LogoutBtn" accessibleRole="BUTTON" fitHeight="30.0" fitWidth="40.0" layoutX="1175.0" layoutY="21.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@images/Logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

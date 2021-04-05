@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.adminNoticeController">
+   <children>
+      <Label layoutX="31.0" layoutY="39.0" prefHeight="52.0" prefWidth="212.0" text="Notice Publish " AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="39.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="noticeTable" layoutX="30.0" layoutY="216.0" prefHeight="534.0" prefWidth="1171.0" stylesheets="@tableview.css">
+        <columns>
+          <TableColumn fx:id="noticeNo" prefWidth="141.0" text="Notice No" />
+          <TableColumn fx:id="noticeTitle" prefWidth="485.0" text="Notice Title" />
+            <TableColumn fx:id="date" minWidth="0.0" prefWidth="181.0" text="Date" />
+            <TableColumn fx:id="link" prefWidth="363.0" text="Link" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addNotice" buttonType="RAISED" layoutX="532.0" layoutY="137.0" onAction="#addNoticeAction" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Add Notice">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1051.0" layoutY="137.0" onAction="#deleteNotice" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Delete Notice">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="706.0" layoutY="137.0" onAction="#getRefresh" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Refresh">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="881.0" layoutY="137.0" onAction="#openNotice" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Open Notice">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

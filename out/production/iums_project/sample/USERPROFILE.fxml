@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserProfileController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #D9D8DA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TabPane layoutX="21.0" layoutY="70.0" prefHeight="727.0" prefWidth="1209.0" stylesheets="@userprofleCSS.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Personal">
+                  <content>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="698.0" prefWidth="1210.0" style="-fx-background-color: #D9D8DA;">
+                           <children>
+                              <Pane layoutX="29.0" layoutY="49.0" prefHeight="568.0" prefWidth="785.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.550000011920929" green="0.5347222089767456" blue="0.5347222089767456" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Pane>
+                              <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Full Name" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="First Name *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Last Name *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="Father Name *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="300.0" prefHeight="45.0" prefWidth="150.0" text="Mother Name *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="360.0" prefHeight="45.0" prefWidth="150.0" text="Birth Date *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="420.0" prefHeight="45.0" prefWidth="150.0" text="Gender *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="480.0" prefHeight="45.0" prefWidth="150.0" text="Religion *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="540.0" prefHeight="45.0" prefWidth="150.0" text="Blood Group *" textFill="#464545">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label fx:id="FullName" layoutX="450.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="No data" textFill="#464545" />
+                              <TextField fx:id="FirstName" editable="false" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="LastName" editable="false" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="FatherName" editable="false" layoutX="450.0" layoutY="240.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="MotherName" editable="false" layoutX="450.0" layoutY="300.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="BirthDate" editable="false" layoutX="450.0" layoutY="360.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Gender" editable="false" layoutX="450.0" layoutY="420.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Religion" editable="false" layoutX="450.0" layoutY="480.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="BloodGroup" editable="false" layoutX="450.0" layoutY="540.0" prefHeight="20.0" prefWidth="300.0" />
+                              <JFXButton fx:id="editBtn" buttonType="RAISED" layoutX="689.0" layoutY="645.0" onAction="#editButton" prefHeight="34.0" prefWidth="128.0" style="-fx-background-radius: 4; -fx-background-color: #00bab3;" text="Edit" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="updateInfoBtn" buttonType="RAISED" layoutX="689.0" layoutY="645.0" onAction="#updateInfoButton" prefHeight="34.0" prefWidth="128.0" style="-fx-background-radius: 4; -fx-background-color: #ff7788;" text="Update Info" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="536.0" layoutY="645.0" onAction="#cancelButton" prefHeight="34.0" prefWidth="128.0" style="-fx-background-radius: 4; -fx-background-color: #FDD26E;" text="Cancel" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Academic">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D9D8DA;">
+                           <children>
+                              <Pane layoutX="29.0" layoutY="49.0" prefHeight="568.0" prefWidth="785.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.550000011920929" green="0.5347222089767456" blue="0.5347222089767456" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Pane>
+                              <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Dept./School">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Program">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Current Year-Semester">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="CGPA">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="300.0" prefHeight="45.0" prefWidth="150.0" text="Theory Selection">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="360.0" prefHeight="45.0" prefWidth="150.0" text="Sessional Section">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="420.0" prefHeight="45.0" prefWidth="150.0" text="Advisor">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="450.0" layoutY="60.0" prefHeight="45.0" prefWidth="350.0" text="Department of Computer Science &amp; Technology" />
+                              <Label layoutX="450.0" layoutY="120.0" prefHeight="45.0" prefWidth="350.0" text="Bachelor of Science in Computer Science and Engineering" />
+                              <Label layoutX="450.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="2/1" />
+                              <Label fx:id="CGPA" layoutX="450.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" />
+                              <Label layoutX="450.0" layoutY="300.0" prefHeight="45.0" prefWidth="150.0" text="B" />
+                              <Label layoutX="450.0" layoutY="360.0" prefHeight="45.0" prefWidth="150.0" text="B1" />
+                              <Label fx:id="Advisor" layoutX="450.0" layoutY="420.0" prefHeight="45.0" prefWidth="350.0" text="No data" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Guardian">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D9D8DA;">
+                           <children>
+                              <Pane layoutX="29.0" layoutY="49.0" prefHeight="568.0" prefWidth="785.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.550000011920929" green="0.5347222089767456" blue="0.5347222089767456" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Pane>
+                              <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Name *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Mobile *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Phone *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="Guardian Email">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <TextField fx:id="GuardianName" editable="false" layoutX="450.0" layoutY="60.0" prefHeight="20.0" prefWidth="300.0" text="no data" />
+                              <TextField fx:id="GuardianMobile" editable="false" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="GuardianPhone" editable="false" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="GuardianEmail" editable="false" layoutX="450.0" layoutY="240.0" prefHeight="20.0" prefWidth="300.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Contact">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="1230.0" style="-fx-background-color: #D9D8DA;">
+                           <children>
+                              <Pane layoutX="29.0" layoutY="49.0" prefHeight="568.0" prefWidth="785.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.550000011920929" green="0.5347222089767456" blue="0.5347222089767456" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Pane>
+                              <Label layoutX="60.0" layoutY="60.0" prefHeight="45.0" prefWidth="150.0" text="Mobile Number *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="120.0" prefHeight="45.0" prefWidth="150.0" text="Phone Number">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="180.0" prefHeight="45.0" prefWidth="150.0" text="Email*">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="240.0" prefHeight="45.0" prefWidth="150.0" text="Present Address *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="60.0" layoutY="340.0" prefHeight="45.0" prefWidth="150.0" text="Permanent Address *">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <TextField fx:id="MobileNumber" editable="false" layoutX="450.0" layoutY="60.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="PhoneNumber" editable="false" layoutX="450.0" layoutY="120.0" prefHeight="20.0" prefWidth="300.0" />
+                              <TextField fx:id="Email" editable="false" layoutX="450.0" layoutY="180.0" prefHeight="20.0" prefWidth="300.0" text="no data" />
+                              <TextArea fx:id="PresentAddress" editable="false" layoutX="450.0" layoutY="240.0" prefHeight="60.0" prefWidth="300.0" text="no data&#10;" />
+                              <TextArea fx:id="PermanentAddress" editable="false" layoutX="450.0" layoutY="333.0" prefHeight="60.0" prefWidth="300.0" text="no data&#10;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Pane layoutX="866.0" layoutY="148.0" prefHeight="568.0" prefWidth="313.0" style="-fx-background-color: #4b55ef; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="22.0" layoutY="325.0" prefHeight="45.0" prefWidth="101.0" text="Student Name :" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="271.0" prefHeight="45.0" prefWidth="101.0" text="Student ID :" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidepaneYearSemester" layoutX="135.0" layoutY="391.0" prefHeight="45.0" prefWidth="166.0" text="semester data" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidepaneSemester" layoutX="135.0" layoutY="444.0" prefHeight="45.0" prefWidth="169.0" text="year data" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="390.0" prefHeight="45.0" prefWidth="101.0" text="Semester :" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="444.0" prefHeight="45.0" prefWidth="101.0" text="Year/Semester :" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidepaneID" layoutX="135.0" layoutY="273.0" prefHeight="45.0" prefWidth="173.0" text="student data" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidepaneName" layoutX="135.0" layoutY="324.0" prefHeight="45.0" prefWidth="173.0" text="name data" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="userPic" fill="#ffffff00" layoutX="147.0" layoutY="141.0" radius="74.0" stroke="#bdd6e8" strokeType="INSIDE">
+                     <effect>
+                        <DropShadow height="16.24" radius="9.517499999999998" spread="0.25" width="23.83">
+                           <color>
+                              <Color opacity="0.48442909121513367" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Circle>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4117647111415863" green="0.4117647111415863" blue="0.4117647111415863" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Pane>
+            <Label layoutX="29.0" layoutY="16.0" text="Dashboard" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

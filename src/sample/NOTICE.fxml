@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.noticeController">
+   <children>
+      <ImageView fitHeight="341.0" fitWidth="592.0" layoutX="607.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/13258.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="341.0" fitWidth="554.0" layoutX="37.0" layoutY="12.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/10088.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="noticeTable" layoutX="39.0" layoutY="420.0" prefHeight="354.0" prefWidth="1160.0" stylesheets="@admin/tableview.css" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="noticeNo" prefWidth="204.0" text="Notice No" />
+          <TableColumn fx:id="noticeTitle" prefWidth="717.0" text="Notice Title" />
+            <TableColumn fx:id="date" prefWidth="238.0" text="Date" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1053.0" layoutY="360.0" onAction="#openNoticeBtn" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #00bab3; -fx-background-radius: 10;" text="Open Notice" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="39.0" layoutY="8.0" prefHeight="52.0" prefWidth="163.0" text="Notice Board" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

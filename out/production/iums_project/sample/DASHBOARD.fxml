@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dashboardController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="808.0" prefWidth="1511.0" style="-fx-background-color: #F5F5FC;">
+         <left>
+            <VBox prefHeight="800.0" prefWidth="266.0" style="-fx-background-color: #FEFEFE;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="760.0" prefWidth="311.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#DashboardAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Dashboard" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Category.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#ClassRoutineAction" prefHeight="70.0" prefWidth="266.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Class routine" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Calendar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="241.0" onAction="#coursesAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Courses" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Folder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#ResultAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Result" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Result.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#CGPACalculatorAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="CGPA Calculator" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Discount.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="585.0" onAction="#TeacherAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Teacher Evaluation" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/evaluation.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#NoticeAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Notice" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Paper.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#MedicalSupportAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Medical Support" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Heart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#UniversityFundAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="University Fund" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Wallet.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="locationBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="490.0" onAction="#locationAction" prefHeight="82.0" prefWidth="270.0" ripplerFill="#ffffff00" styleClass="navPaneBtn" stylesheets="@userprofleCSS.css" text="Location" textAlignment="RIGHT" textFill="#200e32">
+                           <font>
+                              <Font name="BMWHelvetica-Heavy" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Location.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </JFXButton>
+                        <ImageView fitHeight="112.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/supp.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="812.0" prefWidth="1231.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="48.0" prefWidth="1505.0">
+               <children>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1208.0" onAction="#homeBTNAction" prefHeight="43.0" prefWidth="34.0" ripplerFill="#2e69df" styleClass="upPaneBtn" stylesheets="@userprofleCSS.css" AnchorPane.topAnchor="5.0">
+                     <graphic>
+                        <ImageView fx:id="homeBtn" fitHeight="30.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@images/Home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1263.0" prefHeight="43.0" prefWidth="34.0" ripplerFill="#2e69df" styleClass="upPaneBtn" stylesheets="@userprofleCSS.css" AnchorPane.topAnchor="5.0">
+                     <graphic>
+                        <ImageView fx:id="NotificationBtn" fitHeight="30.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@images/Notification.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1320.0" prefHeight="43.0" prefWidth="34.0" ripplerFill="#2e69df" styleClass="upPaneBtn" stylesheets="@userprofleCSS.css" AnchorPane.topAnchor="5.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@images/Mail.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1384.0" onAction="#logoutBTNAction" prefHeight="43.0" prefWidth="34.0" ripplerFill="#2e69df" styleClass="upPaneBtn" stylesheets="@userprofleCSS.css" AnchorPane.topAnchor="5.0">
+                     <graphic>
+                        <ImageView fx:id="LogoutBtn" fitHeight="30.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@images/Logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Circle fx:id="tinyuserPic" fill="DODGERBLUE" layoutX="1463.0" layoutY="27.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="36.0" fitWidth="152.0" layoutX="51.0" layoutY="11.0" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

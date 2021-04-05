@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.adminUserProfileController">
+   <children>
+      <Pane layoutX="-2.0" layoutY="-4.0" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="95.0" prefWidth="259.0" text="Student Information" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="653.0" layoutY="124.0" onAction="#getAddView" prefHeight="47.0" prefWidth="148.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Add Student" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <ScrollPane layoutX="32.0" layoutY="199.0" prefHeight="581.0" prefWidth="1172.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="948.0" prefWidth="1673.0">
+                     <children>
+                        <TableView fx:id="studentTable" layoutX="1.0" layoutY="-1.0" prefHeight="1734.0" prefWidth="1657.0" stylesheets="@tableview.css">
+                          <columns>
+                            <TableColumn fx:id="fxID" prefWidth="185.0" text="ID" />
+                            <TableColumn fx:id="fxfullname" minWidth="0.0" prefWidth="235.0" text="Full Name" />
+                              <TableColumn fx:id="fxsemester" prefWidth="96.0" text="Semester" />
+                              <TableColumn fx:id="fxyearsem" minWidth="0.0" prefWidth="98.0" text="Year/Semester" />
+                              <TableColumn fx:id="fxmail" prefWidth="104.0" text="Email" />
+                              <TableColumn fx:id="fxcontactno" prefWidth="78.0" text="Contact no." />
+                              <TableColumn fx:id="fxpassword" prefWidth="89.0" text="Password" />
+                              <TableColumn fx:id="fxfathername" prefWidth="103.0" text="Father's  Name" />
+                              <TableColumn fx:id="fxdepartment" prefWidth="163.0" text="Department" />
+                              <TableColumn fx:id="fxprogram" prefWidth="149.6666259765625" text="Program" />
+                              <TableColumn fx:id="fxcgpa" prefWidth="75.0" text="CGPA" />
+                              <TableColumn fx:id="fxtheorysection" prefWidth="97.6666259765625" text="Theory Section" />
+                              <TableColumn fx:id="fssessionalsection" prefWidth="114.333251953125" text="Sessional Section" />
+                              <TableColumn fx:id="fxadvisor" prefWidth="75.0" text="Advisor" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="836.0" layoutY="124.0" onAction="#refreshView" prefHeight="47.0" prefWidth="148.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Refresh" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="1027.0" layoutY="124.0" onAction="#delete" prefHeight="47.0" prefWidth="148.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Remove Student" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

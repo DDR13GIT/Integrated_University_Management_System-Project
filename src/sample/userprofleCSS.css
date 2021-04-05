@@ -1,0 +1,30 @@
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: #f5f5f5;
+    -fx-opacity: 0;
+}
+.tab{
+    -fx-background-color:   #f5f5f5;}
+
+.tab:hover{
+    -fx-background-color: #ff7788;
+
+}
+
+.tab:selected{
+    -fx-background-color: #00bab3;
+
+}
+.navPaneBtn:hover {
+    -fx-background-color: #bad7f5;
+    -fx-border-color: #4b55ef;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-text-fill: #4b55ef;
+}
+
+.upPaneBtn:hover {
+    -fx-background-color: #bad7f5;
+    -fx-border-color: #4b55ef;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-text-fill: #4b55ef;
+}
+

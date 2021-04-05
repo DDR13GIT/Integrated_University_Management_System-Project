@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #D9D8DA;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.routineController">
+   <children>
+      <Label layoutX="28.0" layoutY="6.0" prefHeight="52.0" prefWidth="183.0" text="Class Routine" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1022.0" layoutY="735.0" onAction="#download" prefHeight="46.0" prefWidth="136.0" ripplerFill="#3c85e5" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Open PDF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="651.0" fitWidth="1160.0" layoutX="25.0" layoutY="73.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/routine.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

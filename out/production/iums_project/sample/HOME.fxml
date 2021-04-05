@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HOMEController">
+   <children>
+      <Label layoutX="64.0" layoutY="43.0" text="Welcome to Iums Home" textFill="#535357">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="264.0" fitWidth="703.0" layoutX="63.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Sample.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="150.0" text="Hello " textFill="#ffffffbf">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="263.0" prefHeight="26.0" prefWidth="339.0" text="One of the keys to progress in the studies is" textFill="#ffffffbf">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="290.0" text="to be clear that you have the ability to learn" textFill="#ffffffbf">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="319.0" text="what at first seems difficult." textFill="#ffffffbf">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="NameinDashboard" layoutX="151.0" layoutY="150.0" text="Name" textFill="#ffffffbf">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane layoutX="650.0" layoutY="114.0" prefHeight="123.0" prefWidth="244.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 8;">
+         <children>
+            <Label layoutX="45.0" layoutY="70.0" text="Total Attendance" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="20.0" text="35" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow spread="0.03">
+               <color>
+                  <Color red="0.6710526347160339" green="0.624451756477356" blue="0.624451756477356" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="917.0" layoutY="114.0" prefHeight="123.0" prefWidth="244.0" style="-fx-background-color: #ff7788; -fx-background-radius: 8;">
+         <children>
+            <Label layoutX="57.0" layoutY="72.0" text="Total Students" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="22.0" text="150" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow spread="0.03">
+               <color>
+                  <Color red="0.6710526347160339" green="0.624451756477356" blue="0.624451756477356" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="650.0" layoutY="258.0" prefHeight="123.0" prefWidth="244.0" style="-fx-background-color: #ff7788; -fx-background-radius: 8;">
+         <children>
+            <Label layoutX="45.0" layoutY="72.0" text="Upcomming Exams" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="22.0" text="5" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow spread="0.03">
+               <color>
+                  <Color red="0.6710526347160339" green="0.624451756477356" blue="0.624451756477356" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="917.0" layoutY="258.0" prefHeight="123.0" prefWidth="244.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 8;">
+         <children>
+            <Label layoutX="74.0" layoutY="70.0" text="Total Class" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="20.0" text="35" textFill="#141414bf">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow spread="0.03">
+               <color>
+                  <Color red="0.6710526347160339" green="0.624451756477356" blue="0.624451756477356" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <TableView fx:id="ExamTable" layoutX="650.0" layoutY="410.0" prefHeight="361.0" prefWidth="512.0" stylesheets="@admin/tableview.css">
+        <columns>
+          <TableColumn fx:id="fxExamDate" prefWidth="161.0" text="Date" />
+          <TableColumn fx:id="fxExamTime" prefWidth="153.0" text="Time" />
+            <TableColumn fx:id="fxExamination" prefWidth="197.0" text="Examination" />
+        </columns>
+      </TableView>
+      <TableView fx:id="HolidayTable" layoutX="64.0" layoutY="410.0" prefHeight="361.0" prefWidth="552.0" stylesheets="@admin/tableview.css">
+         <columns>
+            <TableColumn fx:id="fxHoliDate" prefWidth="186.0" text="Date" />
+            <TableColumn fx:id="fxHolidays" prefWidth="365.0" text="Holidays" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #d9d8da;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.medicalController">
+   <children>
+      <Label layoutX="30.0" layoutY="17.0" prefHeight="52.0" prefWidth="184.0" text="Medical Support" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="17.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="278.0" fitWidth="696.0" layoutX="30.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/medi.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f5f5fc" layoutX="76.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's check your health with us.">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.019999999552965164" green="0.019999999552965164" blue="0.019999999552965164" opacity="0.3478260934352875" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text fill="#f5f5fc" layoutX="76.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take care of your health from now ">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.019999999552965164" green="0.019999999552965164" blue="0.019999999552965164" opacity="0.3478260934352875" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text fill="#f5f5fc" layoutX="76.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To live a sound life.">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.019999999552965164" green="0.019999999552965164" blue="0.019999999552965164" opacity="0.3478260934352875" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Label layoutX="76.0" layoutY="109.0" prefHeight="52.0" prefWidth="184.0" text="Welcome!" textFill="WHITESMOKE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane layoutX="744.0" layoutY="81.0" prefHeight="259.0" prefWidth="457.0" style="-fx-background-color: #fefefe; -fx-background-radius: 10;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="183.0" onAction="#dr1" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: #00bab3; -fx-background-radius: 4;" text="Send Mail" textFill="#030303">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="38.0" layoutY="21.0" prefHeight="52.0" prefWidth="184.0" text="Medical Team">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Text layoutX="38.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Md. Hasan Mahbub">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MBBS, FRCS, FCPS" />
+            <Text layoutX="38.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mob: 01555555555" />
+            <Text layoutX="290.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Tarana Halim">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="290.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MBBS, FRCS, FCPS" />
+            <Text layoutX="290.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mob: 01555555555" />
+            <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="183.0" onAction="#dr1" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: #00bab3; -fx-background-radius: 4;" text="Send Mail" textFill="#030303">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="38.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: 190104065@aust.edu" />
+            <Text layoutX="290.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: 190104065@aust.edu" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.134782612323761" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="373.0" prefHeight="399.0" prefWidth="457.0" style="-fx-background-color: #fefefe; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="38.0" layoutY="21.0" prefHeight="52.0" prefWidth="184.0" text="Daily Tips">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="38.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tips.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2869565188884735" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="38.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tips.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2869565188884735" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="38.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tips.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2869565188884735" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="38.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tips.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2869565188884735" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Text fx:id="tips1" layoutX="132.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't forget to drink water" wrappingWidth="269.4052734375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="tips2" layoutX="132.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consume less salt and sugar" wrappingWidth="269.4052734375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="tips3" layoutX="127.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reduce intake of harmful fats" wrappingWidth="278.4052734375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="tips4" layoutX="132.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Be active. Don't smoke" wrappingWidth="278.4052734375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.134782612323761" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="505.0" layoutY="373.0" prefHeight="399.0" prefWidth="696.0" style="-fx-background-color: #fefefe; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="38.0" layoutY="21.0" prefHeight="52.0" prefWidth="184.0" text="Medical History">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="uploadPrescription" buttonType="RAISED" layoutX="523.0" layoutY="339.0" onAction="#uploadPresciptonBtn" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Upload File">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="prescriptontTable" layoutX="38.0" layoutY="73.0" prefHeight="243.0" prefWidth="628.0" stylesheets="@admin/tableview.css">
+              <columns>
+                <TableColumn fx:id="tableTitle" prefWidth="627.0" text="Prescription Title" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="refreshbtn" buttonType="RAISED" layoutX="200.0" layoutY="339.0" onAction="#getfresh" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: #00bab3; -fx-background-radius: 10;" text="Refresh">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="339.0" onAction="#openPres" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Open File">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="358.0" layoutY="339.0" onAction="#deletePres" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Delete">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.134782612323761" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

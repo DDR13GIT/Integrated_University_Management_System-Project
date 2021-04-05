@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.adminRoutineController">
+   <children>
+      <Pane layoutX="-9.0" layoutY="1.0" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #fefefe; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="38.0" layoutY="21.0" prefHeight="52.0" prefWidth="184.0" text="Routine" textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="uploadfilebtn" buttonType="RAISED" layoutX="548.0" layoutY="140.0" onAction="#uploadfile" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Upload File">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="fxroutineTable" layoutX="51.0" layoutY="217.0" prefHeight="516.0" prefWidth="1147.0" stylesheets="@tableview.css">
+               <columns>
+                  <TableColumn fx:id="fxdept" prefWidth="153.0" text="Department" />
+                  <TableColumn fx:id="fxsemester" prefWidth="204.0" text="Semester" />
+                  <TableColumn fx:id="fxsection" prefWidth="196.0" text="Section" />
+                  <TableColumn fx:id="fxlink" prefWidth="592.0" text="Link" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="refreshbtn" buttonType="RAISED" layoutX="713.0" layoutY="140.0" onAction="#getrefresh" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: #00bab3; -fx-background-radius: 10;" text="Refresh">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dltbtn" buttonType="RAISED" layoutX="1052.0" layoutY="140.0" onAction="#deletePres" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Delete">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="885.0" layoutY="140.0" onAction="#openPres" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Open File">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.134782612323761" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

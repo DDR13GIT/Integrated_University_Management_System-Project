@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #D9D8DA; -fx-background-radius: 4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cgpaCalculatorController">
+   <children>
+      <Pane layoutX="37.0" layoutY="60.0" prefHeight="223.0" prefWidth="1156.0" style="-fx-background-color: #FEFEFE; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="45.0" layoutY="46.0" text="Calculate Your Cumulative Grade ">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="87.0" text="Point Average">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="143.0" text="Result is yet to publish, can't control the pressure? ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="144.0" text="Don't Worry, we got your back!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="202.0" fitWidth="362.0" layoutX="766.0" layoutY="8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/2425515.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="38.0" layoutY="14.0" text="CGPA Calculator">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="37.0" layoutY="306.0" prefHeight="450.0" prefWidth="1156.0" style="-fx-background-color: #FEFEFE; -fx-background-radius: 10;">
+         <children>
+            <Pane layoutX="21.0" layoutY="20.0" opacity="0.53" prefHeight="413.0" prefWidth="779.0" style="-fx-background-radius: 10; -fx-background-color: #3C91EF;" />
+            <GridPane layoutX="43.0" layoutY="44.0" prefHeight="382.0" prefWidth="706.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.39996337890625" minWidth="10.0" prefWidth="45.39996337890625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="575.2000274658203" minWidth="3.2000183105468807" prefWidth="255.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="575.2000274658203" minWidth="10.0" prefWidth="166.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="575.2000274658203" minWidth="10.0" prefWidth="218.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="81.79999389648438" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="171.20000000000002" minHeight="2.1999938964843793" prefHeight="34.800000000000004" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="171.20000000000002" minHeight="2.1999938964843793" prefHeight="34.800000000000004" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="218.20001831054688" minHeight="8.400000000000006" prefHeight="35.600006103515625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="0.0" prefHeight="34.199987792968756" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="10.0" prefHeight="34.999975585937506" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="10.0" prefHeight="39.79997558593749" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="10.0" prefHeight="37.5999755859375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="10.0" prefHeight="39.199987792968756" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0000061035156" minHeight="10.0" prefHeight="35.39999999999998" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text=" #" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4956521689891815" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="120.0" text="Course Name" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4956521689891815" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <Label text="  1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  6" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  7" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  8" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="  9" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="Discrete Mathematics" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Object Oriented Programming" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Basic Electrical Engineering" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Mathematics-II" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Basic Mechanical Engineering" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Software Development-I" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Object Oriented Programming Lab" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Basic electrical Engineering Lab" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Engineering Drawing " GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="215.0" text="Grade" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4956521689891815" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <JFXTextField fx:id="s1" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="s2" layoutX="265.0" layoutY="39.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="s3" layoutX="265.0" layoutY="68.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="s4" layoutX="265.0" layoutY="98.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="s5" layoutX="265.0" layoutY="127.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="s6" layoutX="265.0" layoutY="156.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <JFXTextField fx:id="s7" layoutX="265.0" layoutY="188.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <JFXTextField fx:id="s8" layoutX="265.0" layoutY="221.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <JFXTextField fx:id="s9" layoutX="265.0" layoutY="254.0" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Label alignment="CENTER" layoutX="493.0" layoutY="12.0" prefHeight="27.0" prefWidth="215.0" text="Credit" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4956521689891815" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <Text layoutX="593.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text layoutX="493.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.75" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+            <ImageView fitHeight="413.0" fitWidth="307.0" layoutX="820.0" layoutY="19.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/Gradient.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="914.0" layoutY="40.0" text="Your GPA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.14" radius="6.2925" width="18.03">
+                     <color>
+                        <Color red="0.7236841917037964" green="0.6466252207756042" blue="0.6466252207756042" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label fx:id="cgpaScore" layoutX="910.0" layoutY="150.0" prefHeight="93.0" prefWidth="133.0" text="0.00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+               <effect>
+                  <DropShadow height="13.59" radius="7.405" width="18.03">
+                     <color>
+                        <Color opacity="0.7043478488922119" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="917.0" layoutY="336.0" onAction="#calculateCGPA" prefHeight="50.0" prefWidth="129.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Calculate CGPA">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

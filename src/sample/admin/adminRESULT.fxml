@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.adminResultController">
+   <children>
+      <Label layoutX="30.0" layoutY="21.0" prefHeight="35.0" prefWidth="202.0" text="Semester Result" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="30.0" layoutY="177.0" prefHeight="571.0" prefWidth="993.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="208.0" AnchorPane.topAnchor="177.0">
+        <content>
+          <AnchorPane layoutX="20.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="572.0" prefWidth="989.0">
+               <children>
+                  <TableView fx:id="subjectTable" accessibleRole="BUTTON" editable="true" layoutY="-8.0" prefHeight="566.0" prefWidth="982.0" stylesheets="@tableview.css">
+                    <columns>
+                      <TableColumn fx:id="fx_id" prefWidth="132.7999668121338" text="Student ID" />
+                      <TableColumn fx:id="fx_discrete" prefWidth="84.26666259765625" text="Discrete" />
+                        <TableColumn fx:id="fx_oop" prefWidth="79.73336791992188" text="OOP" />
+                        <TableColumn fx:id="fx_eee" prefWidth="71.46661376953125" text="EEE" />
+                        <TableColumn fx:id="fx_math" prefWidth="83.73330688476562" text="Math" />
+                        <TableColumn fx:id="fx_mecha" prefWidth="96.26666259765625" text="Mecha" />
+                        <TableColumn fx:id="fx_sdlab" prefWidth="84.00006103515625" text="SD Lab" />
+                        <TableColumn fx:id="fx_ooplab" prefWidth="94.66668701171875" text="OOP Lab" />
+                        <TableColumn fx:id="fx_eeelab" prefWidth="104.79998779296875" text="EEE Lab" />
+                        <TableColumn fx:id="fx_mechalab" prefWidth="105.066650390625" text="Mecha Lab" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="30.0" layoutY="111.0" prefHeight="32.0" prefWidth="304.0" text="All Student Result Database" textFill="#4849ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1055.0" layoutY="322.0" onAction="#refresh" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Refresh">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1053.0" layoutY="249.0" onAction="#addMark" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #FDD26E; -fx-background-radius: 10;" text="Add Marks">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1056.0" layoutY="396.0" onAction="#delete" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #FF7788; -fx-background-radius: 10;" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="forgetmainPane" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="849.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.forgotPassController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="650.0" layoutX="830.0" layoutY="123.0" pickOnBounds="true" AnchorPane.topAnchor="123.0">
+         <image>
+            <Image url="@images/passillus.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="forgotPassPane" layoutX="96.0" layoutY="226.0" prefHeight="320.0" prefWidth="465.0">
+         <children>
+            <Label layoutX="14.0" layoutY="140.0" text="Email" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="45.0" text="Forgot Password" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="89.0" text="Send a OTP to your email to reset your password" textFill="#535357">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="recipientEmail" layoutX="11.0" layoutY="178.0" prefHeight="34.0" prefWidth="390.0" />
+            <JFXButton fx:id="sendOTP" buttonType="RAISED" layoutX="11.0" layoutY="238.0" onAction="#sendOTPBtn" prefHeight="34.0" prefWidth="390.0" style="-fx-background-radius: 4; -fx-background-color: #00bab3;" text="Send OTP " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="resetPassPane" layoutX="96.0" layoutY="226.0" prefHeight="413.0" prefWidth="791.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="128.0" text="New Password" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="45.0" text="Reset Password" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="89.0" text="Please choose your new password" textFill="#535357">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newPass" disable="true" layoutX="13.0" layoutY="153.0" prefHeight="34.0" prefWidth="390.0" />
+            <JFXButton fx:id="passUpdate" buttonType="RAISED" layoutX="14.0" layoutY="287.0" onAction="#passUpdateBtn" prefHeight="34.0" prefWidth="390.0" style="-fx-background-radius: 4; -fx-background-color: ff7788;" text="Save New Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="17.0" layoutY="204.0" text="Confirm Password" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="conPass" disable="true" layoutX="15.0" layoutY="229.0" prefHeight="34.0" prefWidth="390.0" />
+            <Label layoutX="447.0" layoutY="203.0" text="Type OTP">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="typedOTP" layoutX="447.0" layoutY="228.0" prefHeight="34.0" prefWidth="302.0" />
+            <JFXButton fx:id="passUpdate1" buttonType="RAISED" layoutX="447.0" layoutY="285.0" onAction="#verifyBtn" prefHeight="34.0" prefWidth="302.0" style="-fx-background-radius: 4; -fx-background-color: #00bab3;" text="Verify">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="448.0" layoutY="124.0" text="Your ID" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Uid" disable="true" layoutX="447.0" layoutY="149.0" prefHeight="34.0" prefWidth="302.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="back2LoginBtn" buttonType="RAISED" ellipsisString="" layoutX="96.0" layoutY="37.0" onAction="#back2LoginAction" prefHeight="46.0" prefWidth="23.0" ripplerFill="#4c57ed00" style="-fx-background-radius: 4;" textFill="#6a6a6b">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/backBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="83.0" layoutX="1030.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Untitled-1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="154.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back to login" wrappingWidth="76.865234375" />
+   </children>
+</AnchorPane>

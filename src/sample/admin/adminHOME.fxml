@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.adminHomeController">
+   <children>
+      <Label layoutX="64.0" layoutY="43.0" text="Welcome to Iums Admin Panel" textFill="#535357">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="294.0" fitWidth="617.0" layoutX="63.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sample.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="150.0" text="Hello " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="263.0" prefHeight="26.0" prefWidth="339.0" text="One of the keys to progress in the studies is" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="90.0" layoutY="297.0" text="to be clear that you have the ability to learn" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="90.0" layoutY="335.0" text="what at first seems difficult." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="NameinDashboard" layoutX="151.0" layoutY="150.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane layoutX="725.0" layoutY="116.0" prefHeight="619.0" prefWidth="445.0" style="-fx-background-radius: 10; -fx-background-color: #4849ff;">
+         <children>
+            <Label layoutX="81.0" layoutY="325.0" prefHeight="45.0" text="Admin Name :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="271.0" prefHeight="45.0" text="Admin ID:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="fxadminShift" layoutX="264.0" layoutY="384.0" prefHeight="45.0" prefWidth="166.0" text=" data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="381.0" prefHeight="45.0" text="Work Shift:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="fxadminid" layoutX="264.0" layoutY="273.0" prefHeight="45.0" prefWidth="173.0" text=" data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="fxadminName" layoutX="270.0" layoutY="324.0" prefHeight="45.0" prefWidth="173.0" text="data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fx:id="fxuserPic" fill="#ffffff00" layoutX="229.0" layoutY="137.0" radius="74.0" stroke="#bdd6e8" strokeType="INSIDE">
+               <effect>
+                  <DropShadow height="16.24" radius="9.517499999999998" spread="0.25" width="23.83">
+                     <color>
+                        <Color opacity="0.48442909121513367" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Circle>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4117647111415863" green="0.4117647111415863" blue="0.4117647111415863" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <TableView fx:id="HolidayTable" layoutX="64.0" layoutY="435.0" prefHeight="303.0" prefWidth="615.0" stylesheets="@tableview.css">
+         <columns>
+            <TableColumn fx:id="fxHoliDate" prefWidth="186.0" text="Date" />
+            <TableColumn fx:id="fxHolidays" prefWidth="365.0" text="Holidays" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

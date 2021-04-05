@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="437.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addPrescriptionController">
+   <children>
+      <Label layoutX="21.0" layoutY="46.0" prefHeight="37.0" prefWidth="219.0" text="Prescription Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="107.0" text="Title:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="152.0" text="File Chooser:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertPresTitle" layoutX="140.0" layoutY="108.0" prefHeight="25.0" prefWidth="262.0" />
+      <TextField fx:id="insertFileLink" layoutX="140.0" layoutY="154.0" prefHeight="25.0" prefWidth="207.0" />
+      <JFXButton fx:id="uploadBtn" buttonType="RAISED" layoutX="99.0" layoutY="233.0" onAction="#uploadaction" prefHeight="44.0" prefWidth="101.0" style="-fx-background-color: fdd26e; -fx-background-radius: 10;" text="Upload">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="253.0" layoutY="233.0" onAction="#clear" prefHeight="44.0" prefWidth="101.0" style="-fx-background-color: ff7788; -fx-background-radius: 10;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="352.0" layoutY="154.0" onAction="#choose" style="-fx-background-color: #D9D8DA;" text="Choose" />
+   </children>
+</Pane>

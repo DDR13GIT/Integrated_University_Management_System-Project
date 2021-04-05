@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.resultController">
+   <children>
+      <ScrollPane layoutX="210.0" layoutY="140.0" prefHeight="800.0" prefWidth="1231.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane layoutX="20.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: #D9D8DA;">
+               <children>
+                  <Label layoutX="20.0" layoutY="20.0" prefHeight="0.0" prefWidth="170.0" text="Semester Result" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="14.0" layoutY="45.0" prefHeight="726.0" prefWidth="366.0" style="-fx-background-color: #4b55ef; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="46.0" prefHeight="45.0" prefWidth="150.0" text="Semester List" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font></Label>
+                        <MenuButton fx:id="menuBTN" layoutX="32.0" layoutY="106.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="301.0" style="-fx-background-radius: 4; -fx-background-color: #FEFEFE;" text="Select Semester">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="1-1" />
+                            <MenuItem mnemonicParsing="false" text="1-2" />
+                              <MenuItem fx:id="sem2_1" mnemonicParsing="false" onAction="#get2_1" text="2-1" />
+                              <MenuItem mnemonicParsing="false" text="2-2" />
+                              <MenuItem mnemonicParsing="false" text="3-1" />
+                              <MenuItem mnemonicParsing="false" text="3-2" />
+                              <MenuItem mnemonicParsing="false" text="4-1" />
+                              <MenuItem mnemonicParsing="false" text="4-2" />
+                          </items>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </MenuButton>
+                        <ImageView fitHeight="342.0" fitWidth="311.0" layoutX="28.0" layoutY="357.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/remark.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="GradeSheet" layoutX="400.0" layoutY="45.0" prefHeight="327.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                     <children>
+                        <GridPane layoutX="50.0" layoutY="60.0" prefHeight="97.0" prefWidth="665.0" style="-fx-grid-lines-visible: true;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="150.19997558593752" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="514.2000244140626" minWidth="0.0" prefWidth="514.2000244140626" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="36.2" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="31.333325195312497" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="101.93334655761718" minHeight="10.0" prefHeight="35.066674804687494" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="192.0" text="Student ID">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="25.0" prefHeight="23.0" prefWidth="192.0" text="Program" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="100.0" prefHeight="24.0" prefWidth="203.0" text="Dept./School" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label fx:id="sidepaneID" layoutX="10.0" layoutY="25.0" prefHeight="26.0" prefWidth="192.0" text="no data" GridPane.columnIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="276.0" layoutY="25.0" prefHeight="20.0" prefWidth="387.0" text="Bachelor of Science in Computer Science &amp; Engineering" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="276.0" layoutY="84.0" prefHeight="21.0" prefWidth="387.0" text="Department of Computer Science &amp; Engineering" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="50.0" layoutY="183.0" prefHeight="117.0" prefWidth="665.0" style="-fx-grid-lines-visible: true;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="0.0" prefWidth="155.4" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.0" minWidth="0.0" prefWidth="170.7999755859375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.0" minWidth="10.0" prefWidth="246.20007324218756" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.0" minWidth="10.0" prefWidth="95.7999267578125" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="27.26663818359375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="0.0" prefHeight="28.399981689453128" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="32.40001831054688" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="32.46665649414062" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="45.0" prefWidth="55.0" text="Year">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="25.0" prefHeight="29.0" prefWidth="74.0" text="Semester" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="100.0" prefHeight="48.0" prefWidth="203.0" text="Medium of Instruction" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="25.0" prefHeight="26.0" prefWidth="34.0" text="2" GridPane.columnIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="276.0" layoutY="25.0" prefHeight="29.0" prefWidth="44.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="276.0" layoutY="84.0" prefHeight="32.0" prefWidth="94.0" text="Spring,2019" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="101.0" prefHeight="38.0" prefWidth="165.0" text="Enrollment Semester" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="191.0" layoutY="64.0" prefHeight="38.0" prefWidth="69.0" text="English" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="35.0" prefHeight="22.0" prefWidth="175.0" text="Semester credit completed" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="278.0" layoutY="10.0" prefHeight="30.0" prefWidth="143.0" text="Grade Point Average" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label fx:id="ccc" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="74.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label fx:id="cgpa" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="238.0" text="Cumulative Grade Point Average(CGPA)" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="183.0" text="Cumulative Credit Completed" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label layoutX="566.0" layoutY="68.0" prefHeight="29.0" prefWidth="74.0" text="20.05" GridPane.columnIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label fx:id="CGPA" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="74.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                              <Label fx:id="gpa" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="74.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding></Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="39.0" layoutY="6.0" prefHeight="45.0" prefWidth="200.0" text="Semester Final Grade Sheet :" textFill="#4849ff" underline="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="239.0" layoutY="6.0" prefHeight="45.0" prefWidth="160.0" text="Spring,2020" textFill="#4849ff" underline="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <GridPane layoutX="400.0" layoutY="406.0" prefHeight="365.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.999951171875" minWidth="10.0" prefWidth="87.99995117187501" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.000048828125" minWidth="10.0" prefWidth="200.000048828125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.59995117187498" minWidth="10.0" prefWidth="77.80000000000001" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.2000732421875" minWidth="10.0" prefWidth="104.40007324218755" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.7999267578125" minWidth="10.0" prefWidth="132.7999267578125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.199951171875" minWidth="10.0" prefWidth="67.59995117187498" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="95.0" text="Course Number">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="157.0" text="            Course Title" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="99.0" layoutY="16.0" prefHeight="18.0" prefWidth="174.0" text="Discrete Mathematics" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label layoutX="99.0" layoutY="16.0" prefHeight="18.0" prefWidth="80.0" text="     Marks" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="274.0" layoutY="16.0" prefHeight="18.0" prefWidth="108.0" text="       Letter Grade" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="351.0" layoutY="45.0" prefHeight="18.0" prefWidth="80.0" text="   Grade Point" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="380.0" layoutY="16.0" prefHeight="18.0" prefWidth="176.0" text="     Course Credit" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="372.0" layoutY="45.0" prefHeight="18.0" prefWidth="112.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="DMcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="OOPcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="EEEcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="MATHcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="MEcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="SDlabcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="OOPlabcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="EEElabcredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="MElabCredit" text="no data" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin></Label>
+                        <Label text="Object Oriented Programming" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Basic Electrical Engineering" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Mathematics-II" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Basic Mechanical Engineering" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label text="Software Development-I" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="Object Oriented Programming Lab" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label text="Basic Electrical Engineering Lab" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label text="Engineering Drawing" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label prefHeight="18.0" prefWidth="86.0" text="CSE 2103" GridPane.rowIndex="2" />
+                        <Label prefHeight="18.0" prefWidth="66.0" text="CSE 2105" GridPane.rowIndex="3" />
+                        <Label text="EEE 1241" GridPane.rowIndex="4" />
+                        <Label text="MATH 1219" GridPane.rowIndex="5" />
+                        <Label text="ME 1211" GridPane.rowIndex="6" />
+                        <Label text="CSE 1200" GridPane.rowIndex="7" />
+                        <Label text="CSE 1206" GridPane.rowIndex="8" />
+                        <Label text="EEE1242" GridPane.rowIndex="9" />
+                        <Label text="ME 1214" GridPane.rowIndex="10" />
+                        <Label fx:id="DMgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="OOPgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="EEEgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="MATHgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="MEgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="SDlabgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="OOPlabgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="DMgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="OOPgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="EEEgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="MATHgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="MEgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="SDlabgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="OOPlabgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="EEElabgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="EEElabgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="MElabgrade" text="no data" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></Label>
+                        <Label fx:id="MElabgp" text="no data" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding></Label>
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <Label GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                        <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="1.5" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label text="0.75" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="97.0" text="                    Final" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="25.0" top="40.0" />
+                     </padding>
+                  </GridPane>
+                  <Label layoutX="430.0" layoutY="372.0" prefHeight="35.0" prefWidth="425.0" text="Result of Semester Final/Improvement/Clearance Examination" textFill="#4849ff" underline="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

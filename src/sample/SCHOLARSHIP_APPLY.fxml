@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1231.0">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="16.0" prefHeight="65.0" prefWidth="310.0" text="Scholarship Application" textFill="#535357">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="27.0" layoutY="109.0" prefHeight="583.0" prefWidth="1178.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.550000011920929" green="0.5347222089767456" blue="0.5347222089767456" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label layoutX="31.0" layoutY="41.0" prefHeight="45.0" prefWidth="150.0" text="Full Name*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="94.0" prefHeight="45.0" prefWidth="150.0" text="Father's Name*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="152.0" prefHeight="45.0" prefWidth="150.0" text="Mother's Name*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="208.0" prefHeight="45.0" prefWidth="150.0" text="Email Address*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="323.0" prefHeight="45.0" prefWidth="150.0" text="Permanent Address*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="266.0" prefHeight="45.0" prefWidth="150.0" text="Contact no.*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="381.0" prefHeight="45.0" prefWidth="150.0" text="Current CGPA*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="438.0" prefHeight="45.0" prefWidth="150.0" text="Department*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="495.0" prefHeight="45.0" prefWidth="150.0" text="Semester_Year*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="FirstName" layoutX="181.0" layoutY="51.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName1" layoutX="181.0" layoutY="104.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName11" layoutX="181.0" layoutY="162.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName111" layoutX="181.0" layoutY="218.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName1111" layoutX="181.0" layoutY="276.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName11111" layoutX="181.0" layoutY="333.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName111111" layoutX="181.0" layoutY="391.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName1111111" layoutX="181.0" layoutY="448.0" prefHeight="20.0" prefWidth="300.0" />
+                  <TextField fx:id="FirstName11111111" layoutX="181.0" layoutY="505.0" prefHeight="20.0" prefWidth="300.0" />
+                  <Label layoutX="644.0" layoutY="44.0" prefHeight="45.0" prefWidth="150.0" text="Type Of Scholarship*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="studentRBtn" layoutX="679.0" layoutY="108.0" text="Native S.S" textFill="#444444">
+                     <selectedColor>
+                        <Color green="0.729411780834198" blue="0.7019608020782471" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="0.351184219121933" green="0.4131578803062439" blue="0.41005921363830566" />
+                     </unSelectedColor>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="BtnGroup" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="studentRBtn1" layoutX="810.0" layoutY="108.0" text="International S.S" textFill="#444444">
+                     <selectedColor>
+                        <Color green="0.729411780834198" blue="0.7019608020782471" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="0.351184219121933" green="0.4131578803062439" blue="0.41005921363830566" />
+                     </unSelectedColor>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="BtnGroup1" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="studentRBtn11" layoutX="957.0" layoutY="108.0" text="Distress/ Remote S.S" textFill="#444444">
+                     <selectedColor>
+                        <Color green="0.729411780834198" blue="0.7019608020782471" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="0.351184219121933" green="0.4131578803062439" blue="0.41005921363830566" />
+                     </unSelectedColor>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="BtnGroup11" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <Label layoutX="650.0" layoutY="152.0" prefHeight="45.0" prefWidth="150.0" text="From*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <MenuButton layoutX="779.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" style="-fx-background-radius: 4; -fx-background-color: #FEFEFE;" text="Select Session">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Spring, 2021" />
+                        <MenuItem mnemonicParsing="false" text="Fall, 2021" />
+                        <MenuItem mnemonicParsing="false" text="Spring, 2022" />
+                        <MenuItem mnemonicParsing="false" text="Spring, 2023" />
+                     </items>
+                  </MenuButton>
+                  <Label layoutX="650.0" layoutY="191.0" prefHeight="45.0" prefWidth="150.0" text="Comment*" textFill="#464545">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField alignment="CENTER" layoutX="650.0" layoutY="231.0" prefHeight="312.0" prefWidth="495.0" promptText="Write something about why you should get scholarship!" />
+                  <ImageView fitHeight="526.0" fitWidth="25.0" layoutX="547.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/scholarship_apply.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="updateInfoBtn" buttonType="RAISED" layoutX="1077.0" layoutY="718.0" prefHeight="34.0" prefWidth="128.0" style="-fx-background-radius: 4; -fx-background-color: #ff7788;" text="Apply" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

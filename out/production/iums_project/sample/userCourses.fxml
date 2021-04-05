@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1231.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.usercourseController">
+   <children>
+      <Label layoutX="38.0" layoutY="12.0" prefHeight="35.0" prefWidth="236.0" text="Appointed Courses">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="usercourseTable" layoutX="38.0" layoutY="72.0" prefHeight="683.0" prefWidth="1163.0" stylesheets="@admin/tableview.css">
+        <columns>
+          <TableColumn fx:id="courseName" prefWidth="296.800030708313" text="COURSE NAME" />
+          <TableColumn fx:id="courseCode" minWidth="0.0" prefWidth="223.20001220703125" text="COURSE CODE" />
+            <TableColumn fx:id="courseCredit" prefWidth="182.39996337890625" text="COURSE CREDIT" />
+            <TableColumn fx:id="department" prefWidth="292.79998779296875" text="DEPARTMENT" />
+            <TableColumn fx:id="yearSem" prefWidth="188.0" text="YEAR/SEMESTER" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

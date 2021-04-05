@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.addRoutine">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="437.0" style="-fx-background-color: #FEFEFE;">
+         <children>
+            <Label layoutX="15.0" layoutY="14.0" prefHeight="37.0" prefWidth="219.0" text="Routine Upload">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="229.0" text="File Chooser:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="insertFileLink" layoutX="145.0" layoutY="231.0" prefHeight="25.0" prefWidth="200.0" />
+            <JFXButton fx:id="uploadBtn" buttonType="RAISED" layoutX="103.0" layoutY="323.0" onAction="#uploadaction" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Upload">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="253.0" layoutY="323.0" onAction="#clear" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #00BAB3; -fx-background-radius: 10;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="350.0" layoutY="231.0" onAction="#choose" style="-fx-background-color: #D9D8DA;" text="Choose" />
+            <Label layoutX="20.0" layoutY="87.0" text="Department*">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="insertDept" layoutX="146.0" layoutY="88.0" prefHeight="25.0" prefWidth="262.0" />
+            <Label layoutX="20.0" layoutY="131.0" text="Semester*">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="insertSemster" layoutX="146.0" layoutY="132.0" prefHeight="25.0" prefWidth="262.0" />
+            <Label layoutX="20.0" layoutY="177.0" text="Section*">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="insertSection" layoutX="146.0" layoutY="178.0" prefHeight="25.0" prefWidth="262.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
